@@ -1,0 +1,125 @@
+<style>
+        *{
+            font-family: "맑은 고딕", Arial, Helvetica, sans-serif;
+            line-height: 150%;
+        }
+        header div{
+            text-align: center;
+            color:rgb(51, 55, 165);
+            font-size: large;
+        }
+        ul{list-style: none;}
+        a{text-decoration: none;}
+        nav{margin:10px;}
+        nav ul{
+            text-align: center;
+            border-top:1px solid rgb(99, 40, 208);
+            border-bottom: 1px solid rgb(99, 40, 208);
+            padding: 15px 40px
+        }
+        nav ul li {
+            display: inline;
+            padding: 15px 40px;
+            letter-spacing: 5px;
+        }
+        nav ul li:hover{
+            background-color: royalblue;
+        }
+        .right{
+            margin-top: 30px;
+        }
+        body{
+            margin: 0 auto;
+            width : 80vw;
+            background-color: 
+            azure;
+        }
+        header{
+            height : 100px;
+            font-size: 1.4em;
+        }
+        nav {
+            height : 50px;
+        }
+        section {
+            display : flex;
+        }
+        .content{
+            flex : 4;
+        }
+        aside{
+            flex : 1;
+        }
+        footer{
+            height : 150px;
+            background-color: darkgray;
+            color: whitesmoke;
+            text-align: center;
+            font-size: 19px;
+        }
+        #tour>h2, #food>h2, #cafe>h2, #shop>h2{
+            height: 35px;
+            border: 2px solid #0084ff;
+            background-color: rgb(92, 111, 252);
+            text-align: center;
+        }
+        #tour, #food, #cafe, #shop{
+            display: inline-block;
+        }
+        .tour1{
+            float: left;
+            padding: 3px 3px;
+            margin: 5px 10px;
+        }
+        .tour2{
+            float: left;
+            padding: 3px 3px;
+            margin: 5px 10px;
+        }
+        .tour3{
+            float: left;
+            padding: 3px 3px;
+            margin: 5px 10px;
+        }
+        .food1{
+            float: left;
+            padding: 3px 3px;
+            margin: 5px 20px;
+        }
+        .food2{
+            float: left;
+            padding: 3px 3px;
+            margin: 5px 10px;
+        }
+        .food3{
+            float: left;
+            padding: 3px 3px;
+            margin: 5px 10px;
+        }
+        .food4{
+            float: left;
+            padding: 3px 3px;
+            margin: 5px 10px;
+        }
+        .cafe1{
+            float: left;
+            padding: 3px 3px;
+            margin: 5px 10px;
+        }
+        .cafe2{
+            float: left;
+            padding: 3px 3px;
+            margin: 5px 10px;
+        }
+        .shop1{
+            float: left;
+            padding: 3px 3px;
+            margin: 5px 10px;
+        }
+        .shop2{
+            float: left;
+            padding: 3px 3px;
+            margin: 5px 10px;
+        }
+        
+</style>
