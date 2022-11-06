@@ -1,98 +1,157 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="윤주현" />
-    <meta name="keywords" content="빅데이터, django, python" />
-    <title>Welcome to JuHyeon Shoppping Mall</title>
+    <meta name="keywords" content="전주, 전주여행, 전주맛집" />
+    <title>Jeonju Travel Information</title>
+    <script src="https://kit.fontawesome.com/457ffc171d.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="mystyle.css">
 </head>
 <body>
-    <!--header+nav+section>article*3+aside^footer-->
-    <header id="home">
-        <img src="./images/logo.jpg" />
-        <h1> JuHyeon Site </h1>
+    <header>
+        <div>
+            <h1>전주 여행을 도와드립니다</h1>
+        </div>
     </header>
     <nav>
-        <!--ul>li*5>a{메인메뉴$}-->
         <ul>
-            <li><a href="#">소개</a></li>
-            <li><a href="#">쇼핑몰</a></li>
-            <li><a href="#">패키지</a></li>
-            <li><a href="#">커뮤니티</a></li>
-            <li><a href="./gallery.html">갤러리</a></li>
+            <li><a href="#tour">관광지</a></li>
+            <li><a href="#food">맛집</a></li>
+            <li><a href="#cafe">카페</a></li>
+            <li><a href="#shop">기념품</a></li>
+            <li><a href="gallery.html" target="_blank">갤러리</a></li>
         </ul>
     </nav>
     <section>
+        <div class="content">
         <article>
-            <div class="photo"> <!-- . : class, # : id -->
-                <img src="./images/bigdata.jpg" alt="bigdata 이미지">
-            </div>
-            <div class="action">
-                <h2>대외활동리스트</h2>
-                <!-- table>tr>th*3^tr*3>td*3 -->
-                <table border="1">
-                    <tr>
-                        <th>기간</th>
-                        <th>대외활동</th>
-                        <th>주최</th>
-                    </tr>
-                    <tr>
-                        <td>2021.03.</td>
-                        <td>마케팅전략 경진대회</td>
-                        <td>정보시스템학회</td>
-                    </tr>
-                    <tr>
-                        <td>2022.05.</td>
-                        <td>롯데 빅데이터 경진대회</td>
-                        <td>롯데그룹</td>
-                    </tr>
-                    <tr>
-                        <td>2022.08.</td>
-                        <td>머신러닝 교육프로그램</td>
-                        <td>동아대학교</td>
-                    </tr>
-                </table>
+            <div id="tour">
+                <h2>관광지</h2>
+                <div class="tour1">
+                    <img src="./images1/한옥마을.png" alt="한옥마을" width="400px" height="350px">
+                    <p><b><i>전주 한옥마을</i></b></p>
+                    <p>주소 : 전주시 완산구 기린대로 99</p><p>운영시간 : 매일 00:00~24:00</p><p>전화 : 063-282-1330</p>
+                    <p>700여채의 한옥들이 옹기종기 모여있는 곳. <br> 골목골목 즐길거리가 많아, 산책 겸 가볍게 둘러보기 좋은 곳이다.</p>
+                </div>
+                <div class="tour2">
+                    <img src="./images1/경기전.png" alt="경기전" width="400px" height="350px">
+                    <p><b><i>경기전</i></b></p>
+                    <p>주소 : 전주시 완산구 태조로 44</p><p>운영시간 : 매일 09:00~19:00</p><p>입장료 : 어른 3,000원 / 청소년,대학생 2,000원 / 어린이 1,000원</p>
+                    <p>태조의 영정을 봉안하기 위해 세워진 곳. <br> 한복을 입고 예쁜 사진을 남기기 좋은 곳이다.</p>
+                </div>
+                <div class="tour3">
+                    <img src="./images1/전동성당.png" alt="전동성당" width="400px" height="350px">
+                    <p><b><i>전동성당</i></b></p>
+                    <p>주소 : 전주시 완산구 태조로 51</p><p>운영시간 : 일요일 12:00~16:00</p><p>전화 : 063-284-3222</p>
+                    <p>한국 종교 건축물 중 곡선미가 가장 아름다운 성당으로 꼽히는 곳. <br> 내부 입장은 불가능하지만, 아름답고 조용한 분위기를 느껴볼 수 있다.</p>
+                </div>
             </div>
         </article>
         <br><br>
         <article>
-            <div class="media">
-                <h2>좋아하는 음악</h2>
-                <audio src="./media/music01.mp3" controls></audio>
-                <br>
-                <h2>북극곰을 살리자</h2>
-                <video src="./media//movie.mp4" controls width="50%"></video>
-                <h2>미노이(meenoi)의 킬링벌스</h2>
-                <iframe width="900" height="506" src="https://www.youtube.com/embed/xq56tSKakG0" title="meenoi(미노이)의 킬링벌스를 라이브로! | 살랑살랑, Fuxk off, DOOL, 우고츄, busy guy, DA DA!, 못참아!, 3M, 너답기기안 등" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <div id="food">
+                <h2>맛집</h2>
+                <div class="food1">
+                    <img src="./images1/베테랑칼국수.png" alt="베테랑칼국수" width="440px" height="400px">
+                    <p><b><i>베테랑칼국수</i></b></p>
+                    <p>주소 : 전주시 완산구 경기전길 135</p><p>영업시간 : 매일 09:00~20:00</p>
+                    <p>전화 : 063-285-9898</p><p>추천메뉴 : 칼국수+만두</p>
+                </div>
+                <div class="food2">
+                    <img src="./images1/조점례피순대.png" alt="조점례남문피순대" width="400px" height="400px">
+                    <p><b><i>조점례남문피순대</i></b></p>
+                    <p>주소 : 전주시 완산구 전동3가 2-198</p><p>영업시간 : 매일 06:00~22:00</p>
+                    <p>전화 : 063-232-5006</p><p>추천메뉴 : 순대국밥, 피순대</p>
+                </div>
+                <div class="food3">
+                    <img src="./images1/자매갈비전골.png" alt="자매갈비전골" width="400px" height="400px">
+                    <p><b><i>자매갈비전골</i></b></p>
+                    <p>주소 : 전주시 완산구 기린대로 121</p><p>영업시간 : 화요일 휴무, 11:00~20:40(15:00~16:30 브레이크 타임)</p>
+                    <p>전화 : 0507-1420-7953</p><p>추천메뉴 : 갈비전골(물갈비)+부추볶음밥</p>
+                </div>
+                <div class="food1">
+                    <img src="./images1/길거리야.png" alt="길거리야" width="400px" height="400px">
+                    <p><b><i>길거리야</i></b></p>
+                    <p>주소 : 전주시 완산구 경기전길 124</p><p>영업시간 : 09:30~20:30(금,토 09:30~21:00)</p>
+                    <p>전화 : 0507-1359-3734</p><p>추천메뉴 : 바게트버거</p>
+                </div>
             </div>
         </article>
+        <br><br>
         <article>
-            <div class="gallery">
-                <iframe src="./gallery.html" width="60%" height="300" frameborder="0"></iframe>
+            <div id="cafe">
+                <h2>카페</h2>
+                <div class="cafe1">
+                    <img src="./images1/마시랑게.png" alt="마시랑게" width="400px" height="450px">
+                        <p><b><i>마시랑게</i></b></p>
+                        <p>주소 : 전주시 완산구 전동성당길 100 2층</p><p>영업시간 : 매일 10:30~21:00</p>
+                        <p>전화 : 0507-1460-0235</p><p>단체석, 예약, 무선 인터넷, 남/여 화장실 구분</p>
+                        <p>사진 찍기 좋은 곳, 다도체험, 한복체험 함께 운영 중(인스타 참고)</p>
+                        <a href="https://www.instagram.com/masirange/">마시랑게 인스타그램 (클릭!)</a>
+                    </img>
+                </div>
+                <div class="cafe2">
+                    <img src="./images1/전망.png" alt="전망" width="400px" height="350px">
+                        <p><b><i>전망</i></b></p>
+                        <p>주소 : 전주시 완산구 풍남동3가 24-1</p><p>영업시간 : 매일 09:00~23:00</p>
+                        <p>전화 : 0507-1400-6106</p><p>단체석, 주차, 포장, 예약, 무선 인터넷, 남/여 화장실 구분</p>
+                        <p>전주 한옥마을을 한 눈에 볼 수 있는 곳</p>
+                </div>
             </div>
         </article>
-        <aside>
+        <br><br>
+        <article>
+            <div id="shop">
+                <h2>기념품</h2>
+                <div class="shop1">
+                    <img src="./images1/풍년제과.png" alt="풍년제과" width="400px" height="400px">
+                        <p><b><i>풍년제과</i></b></p>
+                        <p>주소 : 전주시 완산구 팔달로 141</p><p>영업시간 : 매일 08:00~22:00</p>
+                        <p>전화 : 0507-1363-3404</p><p>포장, 배달 가능</p><p>가장 유명한 초코파이 외에도 전병, 붓새 등 다양한 빵 판매</p>
+                    </img>
+                </div>
+                <div class="cafe2">
+                    <img src="./images1/카카오프렌즈.png" alt="카카오프렌즈" width="400px" height="400px">
+                        <p><b><i>카카오프렌즈</i></b></p>
+                        <p>주소 : 전주시 완산구 팔달로 126 1층</p><p>영업시간 : 매일 10:00~21:00</p>
+                        <p>전화 : 063-285-1230</p><p>전주 카카오프렌즈 숍에서만 구매할 수 있는 굿즈도 판매 중</p>
+                </div>
+        </article>
+        </div>
+        <aside class="right">
             <div class="login">
+                <br>
+                <h2>로그인</h2>
                 <form action="#" method="post">
-                    회원ID : <input type="text" name="id" id=""><br>
-                    비밀번호 : <input type="password" name="pw" id=""><br>
-                    <input type="submit" value="제출">
-                    <input type="button" value="회원가입">
+                    아이디 : <br><input type="text" name="id" id=""><br>
+                    비밀번호 : <br><input type="password" name="pw" id=""><br>
+                    <input type="submit" value="로그인">
+                    <input type="button" value="취소">
                 </form>
             </div>
+            <br><br>
             <div class="bookmark">
-                <a href="http://mis.donga.ac.kr" target="_blank">경영정보학과</a><br>
-                <a href="./gallery.html">갤러리</a><br>
-                <a href="#home">홈이동</a><br>
-            </div> 
-
+                <h2>전주시 바로가기</h2>
+                <a href="https://www.jeonju.go.kr/" target="_blank"><img src="./images1/전주시.png" alt="전주시" width="20px" height="20px"> 전주시 홈페이지</a><br>
+                <a href="https://blog.naver.com/jeonju_city" target="_blank"><i class="fa-solid fa-blog"></i> 네이버 블로그</a><br>
+                <a href="https://www.facebook.com/jeonju.kr" target="_blank"><i class="fa-brands fa-facebook"></i> 페이스북</a><br>
+                <a href="https://www.instagram.com/jeonjucity/" target="_blank"><i class="fa-brands fa-instagram"></i> 인스타그램</a><br>
+                <a href="https://www.youtube.com/channel/UCPmy2I2GzZb2YyoRh7GR_kg" target="_blank"><i class="fa-brands fa-youtube"></i> 유튜브</a>
+            </div>
         </aside>
     </section>
     <footer>
-        copyright@윤주현
+        <p>문의 : 이메일 - jhyoon1528@donga.ac.kr / 전화번호 - 010-4618-1528</p>
+        <div class="sns">
+            Follow Us
+            <a href="https://www.instagram.com/juhyeon_yoon/"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://github.com/YoonJuHyeon/dau"><i class="fa-brands fa-github"></i></a>
+        </div>
+        <p>copyright@윤주현</p>
     </footer>
-
+    
 </body>
 </html>
